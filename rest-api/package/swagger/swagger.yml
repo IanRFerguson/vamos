@@ -1,0 +1,44 @@
+consumes:
+- application/json
+info:
+  description: HTTP server in Go with Swagger endpoints definition.
+  title: go-rest-api
+  version: 0.1.0
+produces:
+- application/json
+schemes:
+- http
+swagger: "2.0"
+
+paths:
+  /status:
+    get:
+      operationId: checkHealth
+      produces:
+      - text/plain
+      responses:
+        '200':
+          description: OK message.
+          schema:
+            type: string
+            enum:
+            - OK
+
+  # /currentTime:
+
+  /letsGo/{team}:
+    get:
+      description: Returns an affirmative for the user's favorite team
+      parameters:
+        - name: team
+          in: path
+          type: string
+          required: true
+          description: The team to be cheered on.
+      responses:
+        200:
+          description: Returns the respose.
+          schema:
+            type: string
+        400:
+          description: Invalid characters in "team" were provided.

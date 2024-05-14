@@ -1,0 +1,4 @@
+**/bin/
+**/doc/
+**/go.sum
+**/package/swagger/server/*
