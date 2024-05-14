@@ -1,4 +1,4 @@
-# Go REST API
+# REST API
 
 This is a simple REST API that you can run locally:
 

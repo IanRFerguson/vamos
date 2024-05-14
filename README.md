@@ -3,6 +3,7 @@
 
 Short and sweet, just a few working examples.
 
-| Example Project                |
-| ------------------------------ |
-| [Rest API](rest-api/README.md) |
+| Example Project                         |
+| --------------------------------------- |
+| [Rest API](rest-api/README.md)          |
+| (Command Line Interface)[cli/README.md] |
