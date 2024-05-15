@@ -1,7 +1,8 @@
 # VAMOS
-## An Introduction to Go
 
-Short and sweet, just a few working examples.
+A short and sweet introduction to Go.
+
+### Working Examples
 
 | Example Project                         |
 | --------------------------------------- |
