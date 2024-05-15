@@ -1,8 +1,10 @@
 # VAMOS
-## An Introduction to Go
 
-Short and sweet, just a few working examples.
+A short and sweet introduction to Go.
 
-| Example Project                |
-| ------------------------------ |
-| [Rest API](rest-api/README.md) |
+### Working Examples
+
+| Example Project                         |
+| --------------------------------------- |
+| [Rest API](rest-api/README.md)          |
+| (Command Line Interface)[cli/README.md] |

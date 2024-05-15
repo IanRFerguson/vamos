@@ -1,4 +1,6 @@
-# Go REST API
+# REST API
+
+Based on [this DEV walkthrough](https://dev.to/aurelievache/learning-go-by-examples-part-2-create-an-http-rest-api-server-in-go-1cdm)
 
 This is a simple REST API that you can run locally:
 
