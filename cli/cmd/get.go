@@ -8,7 +8,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// getCmd represents the get command
 var timezoneCmd = &cobra.Command{
 	Use:   "timezone",
 	Short: "Get the current time in different timezones",
