@@ -3,6 +3,7 @@ package cmd
 import (
 	"errors"
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/spf13/cobra"
@@ -25,7 +26,8 @@ var timezoneCmd = &cobra.Command{
 		// Get timestamp value
 		_timeOutput_, _error_ := getTimestamp(_timezone_)
 		if _error_ != nil {
-			fmt.Printf("** ERROR ** %s", _error_)
+			fmt.Printf("** ERROR ** %s\n", _error_)
+			os.Exit(1)
 		}
 		fmt.Println((_timeOutput_))
 	},
@@ -50,7 +52,7 @@ func getTimestamp(timeInput string) (time.Time, error) {
 		case "Alaskan":
 			_location_ = "America/Anchorage"
 		default:
-			return time.Now().UTC(), errors.New("Invalid input " + timeInput + "!")
+			return time.Now().UTC(), errors.New("Invalid input '" + timeInput + "'!")
 		}
 		loc, _ := time.LoadLocation(_location_)
 		return time.Now().In(loc), nil
